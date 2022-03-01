@@ -1,0 +1,55 @@
+.btnPrimary {
+    background-color: #0A9396;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: none;
+    border: none;
+}
+
+.btnPrimary:hover {
+    cursor: pointer;
+    background-color: #0a9396a3;
+}
+
+.btnGhost {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    border: #008e8e 3px solid;
+    color: #008e8e;
+    font-size: 0.8em;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    box-shadow: none;
+}
+
+.btnGhost:before {
+    background-color: #008e8e;
+    border-radius: 2rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.btnGhost:hover:before {
+    cursor: pointer;
+    transform: translate(0, 0);
+}
+
+.btnGhost:hover {
+    border: 3px solid transparent;
+    color: white;
+    will-change: transform;
+}

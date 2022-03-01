@@ -1,0 +1,36 @@
+.jumbo {
+    position: absolute;
+    top: 0;
+    z-index: -999;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.jumbo svg {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.jumboContent {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+    font-size: 2em;
+    text-align: left;
+    width: 50%;
+    color: #7c7b7b;
+}
+
+.jumboContent p {
+    font-weight: bold;
+}
+
+.jumboContent span {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}

@@ -1,10 +1,14 @@
 import {Fragment} from "react";
-import Header from "../components/header/Header";
+import Nav from "../components/header/Nav";
+import Jumbotron from "../components/header/Jumbotron";
 
-export default function Home() {
+const Home = () => {
   return (
     <Fragment>
-      <Header/>
+      <Nav/>
+      <Jumbotron/>
     </Fragment>
   )
 }
+
+export default Home;
