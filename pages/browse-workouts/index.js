@@ -1,11 +1,9 @@
 import {Fragment} from "react";
-import Nav from "../../components/header/Nav";
-import WorkoutCategories from "../../components/workout/WorkoutCategories";
+import WorkoutCategories from "../../components/workout/categories/WorkoutCategories";
 
 const BrowseWorkouts = () => {
     return (
         <Fragment>
-            <Nav/>
             <WorkoutCategories/>
         </Fragment>
     )

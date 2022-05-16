@@ -1,4 +1,4 @@
-const WorkoutSVG = (props) => {
+const RunningSVG = (props) => {
     return <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" {...props}
                 viewBox="0 0 1080 589.33892" xmlnsXlink="http://www.w3.org/1999/xlink"><title>working_out</title>
         <path
@@ -110,4 +110,4 @@ const WorkoutSVG = (props) => {
     </svg>
 }
 
-export default WorkoutSVG;
+export default RunningSVG;

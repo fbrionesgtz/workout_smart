@@ -6,12 +6,9 @@ import Button from "../ui/button/Button";
 
 const Nav = () => {
     const router = useRouter();
-    const handleBtnLoginClick = () => {
-        router.push("/login");
-    }
 
     return <nav className={styles.nav}>
-        <p>Workout Smart</p>
+        <p onClick={() => {router.push("/");}}>Workout Smart</p>
         <ul>
             <li>
                 <Link href="/browse-workouts">Browse</Link>
@@ -25,7 +22,7 @@ const Nav = () => {
             <li>
                 <Button
                     label="Login"
-                    onClick={handleBtnLoginClick}
+                    onClick={() => {router.push("/login");}}
                     classes={btnStyles.btnPrimary}
                 />
             </li>

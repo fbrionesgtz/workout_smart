@@ -1,0 +1,50 @@
+.quickStartModule {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all 250ms ease;
+}
+
+.quickStartModule img {
+    width: 100%;
+    height: 100%;
+}
+
+.quickStartModule:after {
+    content: "";
+    background-color: #00000042;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 250ms ease;
+    z-index: 0;
+}
+
+.quickStartModule:hover {
+    transform: scale(1.05);
+}
+
+.quickStartModule:hover:after {
+    height: 100%;
+}
+
+.moduleContent {
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    transition: all 250ms ease;
+}
+
+.moduleContent p:first-child {
+    font-weight: bold;
+}
+
+.quickStartModule:hover .moduleContent {
+    bottom: 50%;
+    transform: translateX(-50%);
+}

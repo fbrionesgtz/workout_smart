@@ -1,7 +1,5 @@
-import Nav from "../../components/header/Nav";
-
 const MyWorkouts = () => {
-    return <Nav/>
+    return <div></div>
 }
 
 export default MyWorkouts;
