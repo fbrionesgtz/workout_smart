@@ -1,11 +1,11 @@
-import QuickStart from "../../components/workout/quick-start/QuickStart";
+import Categories from "../../components/workout/categories/Categories";
 
-const CreateWorkout = (props) => {
-    return <div>
-        <QuickStart
+const SelectCategory = (props) => {
+    return <section>
+        <Categories
             categories={props.categories}
         />
-    </div>
+    </section>
 }
 
 export const getStaticProps = async () => {
@@ -38,4 +38,4 @@ export const getStaticProps = async () => {
     }
 }
 
-export default CreateWorkout;
+export default SelectCategory;

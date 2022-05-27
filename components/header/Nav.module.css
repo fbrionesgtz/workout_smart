@@ -12,6 +12,10 @@
     font-weight: bold;
 }
 
+.nav p:hover {
+    cursor: pointer;
+}
+
 .nav ul,
 .nav li {
     list-style: none;

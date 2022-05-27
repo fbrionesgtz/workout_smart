@@ -1,0 +1,11 @@
+.createWorkoutGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.createWorkout h1 {
+    text-align: center;
+}

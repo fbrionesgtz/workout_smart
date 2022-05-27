@@ -1,5 +1,5 @@
 import {Fragment} from "react";
-import WorkoutCategories from "../../components/workout/categories/WorkoutCategories";
+import WorkoutCategories from "../../components/workout/exercises/WorkoutCategories";
 
 const BrowseWorkouts = () => {
     return (

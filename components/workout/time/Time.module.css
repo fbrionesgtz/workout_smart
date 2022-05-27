@@ -1,0 +1,84 @@
+.timeContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.timeContainer p {
+    margin: auto 1.5rem;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.time {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-height: 8rem;
+    max-height: 8rem;
+    min-width: 10rem;
+    max-width: 10rem;
+    padding: 0 0.3rem;
+}
+
+.time p {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.minute {
+    text-align: center;
+}
+
+.minute:hover {
+    cursor: pointer;
+}
+
+.minute p {
+    margin: 0;
+    padding: 5px;
+}
+
+.minute:after {
+    content: "";
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: #005F73;
+}
+
+.minute:last-child:after {
+    background-color: transparent;
+}
+
+.showMinutesContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.showMinutesContainer p {
+    margin: auto 1.5rem;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.showMinutes {
+    position: relative;
+    background-color: #005f73;
+    color: white;
+    min-height: 8rem;
+    max-height: 8rem;
+    min-width: 10rem;
+    max-width: 10rem;
+    padding: 0;
+}
+
+.showMinutes p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 5em;
+}

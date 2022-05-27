@@ -1,9 +1,9 @@
-import styles from "./QuickStart.module.css";
-import QuickStartModule from "./QuickStartModule";
+import styles from "./Categories.module.css";
+import CategoryModule from "./CategoryModule";
 
-const QuickStart = (props) => {
+const Categories = (props) => {
     const modulesComponents = props.categories.map((category) => (
-        <QuickStartModule
+        <CategoryModule
             key={category.id}
             classes={styles.cell}
             image={category.image}
@@ -17,4 +17,4 @@ const QuickStart = (props) => {
     </section>
 }
 
-export default QuickStart;
+export default Categories;
