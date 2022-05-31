@@ -10,6 +10,10 @@
     margin: 5rem auto;
 }
 
+.cell {
+    box-shadow: 1px 1px 5px 1px #0000000d;
+}
+
 .cell:last-child {
     grid-column-start: 4;
     grid-row-start: 1;

@@ -1,11 +1,18 @@
 import {Fragment} from "react";
 import Time from "./time/Time";
 import Reps from "./reps/Reps";
+import AddSet from "../sets/AddSet";
 
-const AMRAPWorkout = () => {
+const AMRAPWorkout = (props) => {
     return <Fragment>
-        <p>Every minute on the minute</p>
-        <Time/>
+        <div className={props.descClasses}>
+            <h1>{props.title}</h1>
+            <p>Every minute on the minute</p>
+        </div>
+        <div className={props.contentClass}>
+            <Time label="Work"/>
+            <AddSet label="Add sets"/>
+        </div>
     </Fragment>
 };
 

@@ -6,15 +6,32 @@ import EMOMWorkout from "./EMOMWorkout";
 import ForTimeWorkout from "./ForTimeWorkout";
 
 const CreateWorkout = (props) => {
-    const category = props.category;
-
     return <div className={styles.createWorkoutGrid}>
-        <h1>{category}</h1>
-        {category === "AMRAP" && <AMRAPWorkout/>}
-        {category === "For Time" && <ForTimeWorkout/>}
-        {category === "EMOM" && <EMOMWorkout/>}
-        {category === "TABATA" && <TABATAWorkout/>}
-        {category === "Custom Workout" && <CustomWorkout/>}
+        {props.category === "AMRAP" &&
+        <AMRAPWorkout
+            title={props.category}
+            descClass={styles.workoutDescription}
+            contentClass={styles.workoutContent}/>}
+        {props.category === "For Time" &&
+        <ForTimeWorkout
+            title={props.category}
+            descClass={styles.workoutDescription}
+            contentClass={styles.workoutContent}/>}
+        {props.category === "EMOM" &&
+        <EMOMWorkout
+            title={props.category}
+            descClass={styles.workoutDescription}
+            contentClass={styles.workoutContent}/>}
+        {props.category === "TABATA" &&
+        <TABATAWorkout
+            title={props.category}
+            descClass={styles.workoutDescription}
+            contentClass={styles.workoutContent}/>}
+        {props.category === "Custom Workout" &&
+        <CustomWorkout
+            title={props.category}
+            descClass={styles.workoutDescription}
+            contentClass={styles.workoutContent}/>}
     </div>
 }
 

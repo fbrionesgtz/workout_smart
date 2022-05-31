@@ -1,0 +1,11 @@
+.addSet p {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.addButton {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.2em #005f73 solid;
+    padding: 0.2em;
+}

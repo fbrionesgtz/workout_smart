@@ -3,9 +3,7 @@ import {useSelector, useDispatch} from "react-redux";
 import {workoutActions} from "../../../store/workout-slice";
 import styles from "./Time.module.css";
 
-let firstSet = true;
 const Time = (props) => {
-    const currentSet = useSelector(state => {state.workout.currentSet});
     const dispatch = useDispatch();
     const [minutes, setMinutes] = useState(0);
     const [showTime, setShowTime] = useState(false);
@@ -32,8 +30,7 @@ const Time = (props) => {
         setMinutes(minutes);
 
         // dispatch(workoutActions.setCurrentSet(true));
-        dispatch(workoutActions.addSets(1));
-        dispatch(workoutActions.addTime(minutes));
+        dispatch(workoutActions.addTime({setNum: props.setNum, time: minutes}));
     }
 
     return <Fragment>

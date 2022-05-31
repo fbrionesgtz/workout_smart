@@ -1,11 +1,26 @@
 .createWorkoutGrid {
     display: grid;
-    grid-template-columns: 1fr;
-    width: 80%;
+    grid-template-columns: 30% 70%;
+    gap: 5%;
     margin: auto;
-    text-align: center;
+    /*text-align: center;*/
 }
 
-.createWorkout h1 {
-    text-align: center;
+.createWorkoutGrid .workoutDescription p {
+    font-size: 1.5em;
+    margin: 0 0 3rem 0;
+}
+
+.createWorkoutGrid h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.workoutContent p {
+    font-size: 1.5em;
+}
+
+.workoutDescription {
+    display: flex;
+    flex-direction: column;
 }

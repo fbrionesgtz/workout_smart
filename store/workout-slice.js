@@ -3,35 +3,29 @@ import {createSlice} from "@reduxjs/toolkit";
 const workoutSlice = createSlice({
     name: "workout",
     initialState: {
-        currentSet: false,
-        sets: 0,
-        categories: [],
-        exercises: [],
-        reps: [],
-        times: []
+        categories: "",
+        sets: [{
+            setNum: 1,
+            exercises: [{
+                name: "",
+                reps: 0,
+                time: 0
+            }]
+        }]
     },
     reducers: {
-        setCurrentSet: (state, action) => {
-            state.currentSet = action.payload;
-        },
         addSets: (state, action) => {
-            // if(state.currentSet && state.sets === 0) {
-            //     state.sets = action.payload;
-            //     // return;
-            // } else if (!state.currentSet)
-            state.sets = state.sets + action.payload;
+            state.sets.push(action.payload);
         },
         addCategory: (category) => {
-            console.log(category)
+            console.log(category);
         },
         addTime: (state, action) => {
-            // if (state.sets === 1) {
-            //     state.times = action.payload;
-            //     console.log(state.times);
-            // } else if (state.sets > 1) {
-                state.times = [...state.times, action.payload];
-                console.log(state.times);
-            // }
+            const i = state.sets.findIndex(set => {
+                return set.setNum === action.payload.setNum;
+            });
+
+            state.sets[i].exercises[0].time = action.payload.time;
         },
         addReps: (reps) => {
         },

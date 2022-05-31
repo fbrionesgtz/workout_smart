@@ -1,6 +1,5 @@
 .timeContainer {
     display: flex;
-    justify-content: center;
 }
 
 .timeContainer p {
@@ -52,7 +51,6 @@
 
 .showMinutesContainer {
     display: flex;
-    justify-content: center;
 }
 
 .showMinutesContainer p {
