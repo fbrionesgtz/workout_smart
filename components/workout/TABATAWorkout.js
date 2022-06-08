@@ -1,5 +1,5 @@
 import {Fragment} from "react";
-import Time from "./time/Time";
+import Range from "./range/Range";
 import Reps from "./reps/Reps";
 import AddSet from "../sets/AddSet";
 
@@ -10,7 +10,7 @@ const AMRAPWorkout = (props) => {
             <p>High-intensity interval training</p>
         </div>
         <div className={props.contentClass}>
-            <Time label="Work"/>
+            <Range label="Work"/>
             <AddSet label="Add sets"/>
         </div>
     </Fragment>

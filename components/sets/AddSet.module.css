@@ -4,6 +4,9 @@
 }
 
 .addButton {
+    display: inline-block!important;
+    width: auto!important;
+    margin: 0!important;
     background-color: transparent;
     border-radius: 50%;
     border: 0.2em #005f73 solid;

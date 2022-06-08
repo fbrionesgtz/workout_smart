@@ -4,10 +4,10 @@ import {workoutActions} from "../../store/workout-slice";
 import {useDispatch, useSelector} from "react-redux";
 
 const AddSet = (props) => {
+    const dispatch = useDispatch();
     const sets = useSelector(state => {
         return state.workout.sets
     });
-    const dispatch = useDispatch();
 
     const handleAddSetToWorkout = () => {
         const setNum = sets.length + 1;
@@ -15,14 +15,13 @@ const AddSet = (props) => {
         dispatch(workoutActions.addSets({
             setNum: setNum,
             exercises: [{
-                name: "",
+                name: props.category === "AMRAP" ? `${props.category} ${setNum}` : "",
                 reps: 0,
-                time: 0
+                time: 0,
+                rest: 0
             }]}
         ));
     }
-
-    console.log(sets);
 
     return <div className={styles.addSet}>
         <p>{props.label}</p>

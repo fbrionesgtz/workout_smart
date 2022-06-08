@@ -49,10 +49,6 @@
     background-color: transparent;
 }
 
-.showMinutesContainer {
-    display: flex;
-}
-
 .showMinutesContainer p {
     margin: auto 1.5rem;
     font-size: 3em;

@@ -1,6 +1,6 @@
 .createWorkoutGrid {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 25% 70%;
     gap: 5%;
     margin: auto;
     /*text-align: center;*/
@@ -23,4 +23,10 @@
 .workoutDescription {
     display: flex;
     flex-direction: column;
+}
+
+.workoutContent button {
+    display: block;
+    margin: auto;
+    width: 40%;
 }

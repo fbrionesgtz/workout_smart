@@ -1,3 +1,13 @@
+.reps {
+    display: flex;
+}
+
+.reps p {
+    margin: auto 1.5rem;
+    font-size: 3em;
+    font-weight: bold;
+}
+
 .reps input {
     min-height: 8rem;
     max-height: 8rem;

@@ -1,7 +1,7 @@
 import {useState} from "react";
 import styles from "./Reps.module.css";
 
-const Reps = () => {
+const Reps = (props) => {
     const [reps, setReps] = useState(0);
 
     const handleSetReps = (e) => {
@@ -13,6 +13,7 @@ const Reps = () => {
     }
 
     return <div className={styles.reps}>
+        <p>{props.label}</p>
         <input
             type="number"
             value={reps}
